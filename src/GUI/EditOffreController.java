@@ -42,7 +42,7 @@ public class EditOffreController implements Initializable {
     
     @FXML    
     private ChoiceBox <String> cbDomaine;
-    private String[] domainesWork ={"Informatique","Assurance","Agriculture","Alimentation","Architecture","Art","Banque","Biologie","Chimie","Design","Finance","Mode"};
+    private String[] domainesWork ={"Informatique","Assurance","Agriculture","Alimentation","Architecture","Art","Banque","Biologie","Chimie","Design","Finance","Marketing","Mode","Autre"};
    
     @FXML
     private TextField tfId;
@@ -83,7 +83,7 @@ public class EditOffreController implements Initializable {
       String h = cbContrat.getValue();
         s.modifier(new Offre( Integer.parseInt(tfId.getText()),tfTitle.getText(),tfDesc.getText(),
                 tfPost.getText(),Integer.parseInt(tfSalaire.getText()),tfLieuu.getText(),cbContrat.getValue(),Integer.parseInt(tfDuree.getText()),
-                cbStatus.getValue(),cbDomaine.getValue(),"Test","Test@test.com"));
+                cbStatus.getValue(),cbDomaine.getValue(),"Esprit","Esprit@gmail.com"));
  /*       JOptionPane.showMessageDialog(null, "Offre "+tfTitle.getText()+" modifié avec succès.");
         */
          if (tfTitle.getText().isEmpty() || tfDesc.getText().isEmpty() || tfPost.getText().isEmpty() || tfLieuu.getText().isEmpty() 

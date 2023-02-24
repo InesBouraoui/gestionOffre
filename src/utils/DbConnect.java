@@ -17,9 +17,9 @@ import java.util.logging.Logger;
  */
 public class DbConnect {    
     private static String HOST = "127.0.0.1";
-    private final String URL = "jdbc:mysql://localhost:3306/gestionoffrev15";
+    private final String URL = "jdbc:mysql://localhost:3306/gestionoffrev5";
     private static int PORT = 3306;
-    private static String DB_NAME = "gestionoffrev15";
+    private static String DB_NAME = "gestionoffrev5";
     private static String USERNAME = "root";
     private static String PASSWORD = "";
     private static Connection connection;

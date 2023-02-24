@@ -58,7 +58,7 @@ public class CreateOffresController implements Initializable {
     
     @FXML    
     private ChoiceBox <String> cbDomaine;
-    private String[] domainesWork ={"Informatique","Assurance","Agriculture","Alimentation","Architecture","Art","Banque","Biologie","Chimie","Design","Finance","Mode"};
+    private String[] domainesWork ={"Informatique","Assurance","Agriculture","Alimentation","Architecture","Art","Banque","Biologie","Chimie","Design","Finance","Marketing","Mode","Autre"};
     @FXML
     private TextField tfContrat;
     @FXML
@@ -77,7 +77,7 @@ public class CreateOffresController implements Initializable {
     @FXML
     private void btnAjouterOffre(ActionEvent event)  throws IOException {
         ServiceOffre s = new ServiceOffre();
-        s.ajouter(new Offre(tfTitre.getText(), tfDesc.getText(), tfPost.getText(), Integer.parseInt(tfSalaire.getText()), tfLieu.getText(), cbContrat.getValue(), Integer.parseInt(tfDuree.getText()), "Disponible", cbDomaine.getValue(),"Test","Test@test"));
+        s.ajouter(new Offre(tfTitre.getText(), tfDesc.getText(), tfPost.getText(), Integer.parseInt(tfSalaire.getText()), tfLieu.getText(), cbContrat.getValue(), Integer.parseInt(tfDuree.getText()), "Disponible", cbDomaine.getValue(),"Esprit","Esprit@gmail.com"));
         
         if (tfTitre.getText().isEmpty() || tfDesc.getText().isEmpty() || tfPost.getText().isEmpty() || tfLieu.getText().isEmpty() 
                 || cbContrat.getValue().isEmpty() || cbDomaine.getValue().isEmpty()
